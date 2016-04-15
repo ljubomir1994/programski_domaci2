@@ -7,9 +7,9 @@ import numpy as np
 if __name__ == '__main__':
     pass
 
-def poissonRandomNumber(lambda1):
+def poissonRandomNumber(lam):
     rand = np.random()
-    l = np.exp(-lambda1)
+    l = np.exp(-lam)
     k = 0
     p = 1
     while(p > l):
@@ -27,5 +27,5 @@ def podskupovi(d, n, lambda1):
             list.insert(j, r.rand(1, 100))
         for item in xrange(list):
             print "\nSadrzaj: ", item
-    
+
 podskupovi.podskupovi(10, 5, 10)
